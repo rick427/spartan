@@ -1,0 +1,53 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 105vh;
+    padding-top: 20px;
+    background: #aaa;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    padding: 20px 30px;
+    position: absolute;
+    transition: all .3s;
+    background: #fff;
+    z-index: 9;
+    top: 0px;
+    width: 100%;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav ul li {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li a{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.1em;
+  color: #333;
+  padding: 0.25rem 0;
+  margin: 0 1.8rem;
+  text-decoration: none;
+}
+
+.nav ul li.logo .black{
+    display: none 
+}
+
+.nav ul li.logo a{
+    margin: 0 4rem;
+}
