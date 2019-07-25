@@ -91,14 +91,14 @@ html{
     color: #18191d;
     position: fixed;
     left: 0;
-    top: 0;
+    top: 95px;
     height: 100%;
     width: 100%;
     padding: 3.75rem;
     z-index: 99;
-    overflow: hidden;
-    /* visibility: hidden;
-    opacity: 0; */
+    overflow-y: hidden;
+    visibility: hidden;
+    opacity: 0; 
     transform: translateY(-100px);
     transition: all .4s ease-in;
 }
@@ -194,4 +194,51 @@ ul.social-icons.list-inline{
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px;
+}
+
+.corner-circle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius:  0 0 0 120px;
+    z-index: 2;
+}
+
+.nav-close{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.nav-close span{
+    background: #18191d;
+    width: 30px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 14px;
+}
+
+.nav-close span:nth-child(1){
+    transform: rotate(45deg);
+}
+
+.nav-close span:nth-child(2){
+    transform: rotate(-45deg);
+}
+
+.nav.sticky{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,0.35);
+    animation-name: animationFade;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
